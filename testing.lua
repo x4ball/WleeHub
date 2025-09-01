@@ -5,7 +5,6 @@ local Window = WindUI:CreateWindow({
     Author = "by .ftgs and .ftgs",
     Folder = "MySuperHub",
     
-    -- ↓ This all is Optional. You can remove it.
     Size = UDim2.fromOffset(580, 460),
     Transparent = true,
     Theme = "Dark",
@@ -17,7 +16,6 @@ local Window = WindUI:CreateWindow({
     
     User = {
         Enabled = true,
-        Anonymous = true,
         Callback = function()
             print("clicked")
         end,
