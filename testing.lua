@@ -33,7 +33,7 @@ Window:Tag({
 local MainSection = Window:Section({
     Title = "Section for the tabs",
     Icon = "bird",
-    Opened = false,
+    Opened = true,
 })
 MainSection:Tab({
     Title = "ChangeLog",
