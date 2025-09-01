@@ -27,7 +27,7 @@ Window:Tag({
     Color = Color3.fromHex("#30ff6a")
 })
 Window:Tag({
-    Title = "Beta Version",
+    Title = "Beta",
     Color = Color3.fromHex("FFEEF106")
 })
 local MainSection = Window:Section({
@@ -38,5 +38,5 @@ local MainSection = Window:Section({
 MainSection:Tab({
     Title = "ChangeLog",
     Icon = "square-pen",
-    Locked = false,
+    Locked = true,
 })
