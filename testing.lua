@@ -48,7 +48,5 @@ local Maintab = MainSection:Tab({
     Color = "Red",
     Image = "",
     ImageSize = 30,
-    Thumbnail = "",
-    ThumbnailSize = 80,
     Locked = false,
 })
