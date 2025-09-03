@@ -1,11 +1,11 @@
-local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
+local Version = "1.6.45"
+local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/download/" .. Version .. "/main.lua"))()
 local Window = WindUI:CreateWindow({
-    Title = "WleeHub",
-    Icon = "laptop-minimal",
-    Author = "by .ftgs and .ftgs",
-    Folder = "MySuperHub",
+    Title = "Wlee Hub | Universal",
+    Icon = "globe",
+    Author = "BY | @Fxcaaax",
+    Folder = "Wlee Hub",
     
-
     Size = UDim2.fromOffset(580, 460),
     Transparent = true,
     Theme = "Dark",
@@ -23,20 +23,32 @@ local Window = WindUI:CreateWindow({
     },
 })
 Window:Tag({
-    Title = "Working",
+    Title = "Free Version",
     Color = Color3.fromHex("#30ff6a")
 })
-Window:Tag({
-    Title = "Beta",
-    Color = Color3.fromHex("FFEEF106")
+WindUI:Notify({
+    Title = "Welcome to Wlee Hub Universal",
+    Content = "Thx for using we are script, i hope you are enjoy the script",
+    Duration = 5,
+    Icon = "smile",
 })
 local MainSection = Window:Section({
-    Title = "Section for the tabs",
-    Icon = "bird",
+    Title = "Main",
+    Icon = "house",
     Opened = true,
 })
-MainSection:Tab({
-    Title = "ChangeLog",
-    Icon = "square-pen",
-    Locked = true,
+local Maintab = MainSection:Tab({
+    Title = "Changelog",
+    Icon = "pen",
+    Locked = false,
+})
+ Maintab:Paragraph({
+    Title = "Paragraph with Image, Thumbnail, Buttons",
+    Desc = "Test Paragraph",
+    Color = "Red",
+    Image = "",
+    ImageSize = 30,
+    Thumbnail = "",
+    ThumbnailSize = 80,
+    Locked = false,
 })
